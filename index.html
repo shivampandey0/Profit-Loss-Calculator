@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,22 @@
     <link href="style.css" rel="stylesheet" />
     <title>Profit & Loss Calculator</title>
 </head>
+
 <body>
 
     <main class="container">
 
-        <h1>Was your Birthday a Palindrome date?</h1>
-        <label for="date-of-birth">Date of Birth: </label>
-        <input class="date-of-birth" type="date"></input>
-      
+        <h1>Profit & Loss Calculator</h1>
+        <label for="date-of-purchase">Date of Purchase: </label>
+        <input class="date-of-purchase" type="date"></input>
+        <div class="price-on-date price">Buy Price: $$$</div>
+
+        <label for="quantity">Quantity: </label>
+        <input class="quantity" type="number"></input>
+
+        <div class="current-price price">Current Price: $$$</div>
+
+
         <button class="check">Check</button>
 
         <div class="timeout">
@@ -41,6 +50,7 @@
 
     <script src="app.js" type="text/javascript"></script>
 
-    
+
 </body>
+
 </html>
