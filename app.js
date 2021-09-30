@@ -2,7 +2,7 @@ const purchaseDate = document.querySelector(".date-of-purchase");
 const quantity = document.querySelector(".quantity");
 const result = document.querySelector(".result");
 const currentPriceLabel = document.querySelector(".current-price");
-const buyPrice = document.querySelector(".price-on-date");
+const buyPriceLabel = document.querySelector(".price-on-date");
 const submit = document.querySelector(".check");
 
 submit.addEventListener("click", clickHandler);
@@ -36,6 +36,9 @@ async function fetchPrices()  {
     .then(response => response.json())
     .then(data => boughtAt = Math.trunc(data["market_data"]["current_price"]["usd"]));
     
+    buyPriceLabel.innerText = `Bought At: $${boughtAt}`;
+    currentPriceLabel.innerText = `Current Price: $${currentPrice}`;
+
     calculateReturns(boughtAt, currentPrice, quantity.value)
 }
 

@@ -30,7 +30,8 @@ label {
 input{
     border: 2px solid var(--primary-color);
     height: 2rem;
-    width: 200px;
+    width: 20%;
+    min-width: 200px;
     padding: 0.4rem;
     text-align: center;
     border-radius: 8px;
@@ -46,6 +47,8 @@ input{
     margin: 1rem auto;
     border: 2px solid var(--primary-color);
     border-radius: 8px;
+    width: 20%;
+    min-width: 200px;
 
 }
 
